@@ -14,7 +14,8 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="ru.ramazanov.springcourse.MusicPlayer">
+          class="ru.ramazanov.springcourse.MusicPlayer"
+    scope="prototype">
         <!--        <constructor-arg ref="musicBean"/>-->
         <property name="music" ref="musicBean"/>
 
